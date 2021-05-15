@@ -5,7 +5,7 @@ This allows me to run my worlds from a tmpfs which is much faster than a disk.
 LATEST must point to a tgz file.
 
 Here is an example of how I use this.
-
+```
 version: "3"
 
 services:
@@ -47,7 +47,7 @@ volumes:
     driver_opts:
       type: tmpfs
       device: tmpfs
-
+```
 	
 Using a tmpfs comes with risks that you could lose world data since the last backup was ran if the tmpfs disk is destroyed.
 
