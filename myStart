@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ -n $LATEST ]]
+then
+	tar -zxf ${LATEST} -C /data
+fi
+
+exec /start
